@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-part04';
+  buttonStatus: string = 'Normal';
+
+  sendStatus(status: string) {
+    this.buttonStatus = status;
+  }
 }
